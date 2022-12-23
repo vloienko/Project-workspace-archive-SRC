@@ -1,0 +1,12 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'mixins';
+@import 'global';
+
+@import './pages/home';
+@import './template-parts/header';
+@import './template-parts/footer';
+@import './template-parts/animationScroll';
+
+@import './modules/_popup';

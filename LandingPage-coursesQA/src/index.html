@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_static/head.html',{
+	"title":"Головна"
+	})
+	<body>
+		<div class="wrapper">
+			@@include("html/main/header.html",{})
+			<main class="main">
+				<section class="start">
+					<div class="container">
+						<span class="start__boxshadow"></span>
+						<div class="start__rocket"></div>
+						<div class="start__info">
+							<div class="start__text">
+								<a class="logo" href="#">
+									<img src="@img/logo-img.jpg" alt="Logo">
+								</a>
+								<h4 class="start__text-it">
+									ІТ Професія з зарплатю про яку ти мріяв
+								</h4>
+								<h1 class="start__text-courses">
+									<span>КУРСИ</span> З ТЕСТУВАННЯ <br> ПРОГРАМНОГО <br> ЗАБЕЗПЕЧЕННЯ <br> <span>З НУЛЯ</span>
+								</h1>
+								<p class="start__text-free">
+									ЛИШЕ ЗАРАЗ ДЛЯ ГРОМАДЯН УКРАЇНИ - <br> <span>БЕЗКОШТОВНО.</span>
+								</p>
+								<p class="start__text-support">
+									<span>ПІДТРИМАЄМО УКРАЇНУ В СКРУТНІ ЧАСИ РАЗОМ!</span>
+								</p>
+							</div>
+						</div>
+						<div class="start__main">
+							<div class="start__main-date">Дата старту 17.12.22</div>
+							<a class="start__main-registration submit-btn" data-goto=".page-last" href="#">РЕЄСТРАЦІЯ НА КУРСИ</a>
+							<div class="start__main-places">КІЛЬКІСТЬ МІСЦЬ ОБМЕЖЕНА</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="program">
+					<div class="container-fluid">
+						<div class="program__block">
+							<h4 class="program__title">
+								Авторська <span>Програма Навчання</span> <br> з тестування програмного забезпечення з нуля
+							</h4>
+							<div class="program__items">
+								<div class="program__item">
+									<img class="program__item-img" src="@img/item-1.png" alt="images">
+									<p class="program__item-text">
+										<span>4 модулі</span> навчання
+										з практичними
+										завданнями
+									</p>
+								</div>
+								<div class="program__item">
+									<img class="program__item-img" src="@img/item-2.png" alt="images">
+									<p class="program__item-text">
+										<span>2 місяці</span> плідного 
+										Навчання, 
+										практики та
+										особистої роботи з
+										викладачем
+									</p>
+								</div>
+								<div class="program__item">
+									<img class="program__item-img" src="@img/item-3.png" alt="images">
+									<p class="program__item-text program__item-text--last">
+										<span>2 години</span> тривалість заняття
+									</p>
+								</div>
+							</div>
+							<div class="program__descr">
+								<p class="program__descr-text">
+									<span>ВАЖЛИВО!</span>
+								</p>
+								<p class="program__descr-text">Це повний 2 місячний курс навчання</p>
+								<p class="program__descr-smalltext">
+									<span>(а не відкриті уроки та вебінари, марафони, тестові відвідування, пробні або вступні заняття або програми в записі)</span>
+								</p>
+								<p class="program__descr-text">КУРС РОЗРАХОВАНИЙ НА ЛЮДЕЙ , ЯКІ ПРАГНУТЬ ДОСЯГТИ РЕЗУЛЬТАТУ! </p>
+								<p class="program__descr-smalltext">
+									<span>Все навчання проходитиме в реальному часі. Реєструйтеся, якщо ви вирішили , що саме ця професія вам необхідна!</span>
+								</p>
+							</div>
+							<div class="program__buttons">
+								<div class="program__button">
+									<p class="program__button-text">ЗВИЧАЙНА ВАРТІСТЬ</p>
+									<div class="program__button-price red-line">9500 грн</div>
+								</div>
+								<div class="program__button">
+									<p class="program__button-text">ЛИШЕ ЗАРАЗ</p>
+									<div class="program__button-price">БЕЗКОШТОВНО</div>
+								</div>
+							</div>
+							<div class="program__text-btn">
+								Кількість місць обмежена!
+							</div>
+						</div>
+						<span class="program-boxshadow"></span>
+					</div>
+				</section>
+
+				<section class="reviews">
+					<div class="container-fluid">
+						<div class="reviews__title">
+							Відгуки <span>людей</span>, які вже <span>закінчили курси</span>
+						</div>
+						<div class="reviews__clients swiper-container">
+							<div class="reviews__block swiper-wrapper">
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Антон Великий</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Галя Балувана</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Влад Мудрий</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Анна Поганяйло</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Богдан Василенко</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+								<div class="reviews__box swiper-slide">
+									<div class="reviews__list">
+										<div class="reviews__inner">
+											<img class="reviews__img" src="@img/user.png" alt="user images">
+											<p class="reviews__name">Андрій Творчий</p>
+										</div>
+										<div class="reviews__descriptions">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam ipsum maiores facere odit. Quibusdam facere a voluptas quidem id? Illum sunt, asperiores optio amet ducimus nisi sapiente reprehenderit dolores.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next reviews__next"></div>
+							<div class="swiper-button-prev reviews__prev"></div>
+						</div> 
+						<div class="reviews__video swiper-container">
+							<div class="reviews__video-block swiper-wrapper">
+								<div class="reviews__video-box swiper-slide">
+									<div class="video">
+										<a class="video__link" href="https://youtu.be/bclnGix8RTI">
+											<picture>
+												<source srcset="https://i.ytimg.com/vi_webp/bclnGix8RTI/maxresdefault.webp" type="image/webp">
+												<img class="video__media" src="https://i.ytimg.com/vi/bclnGix8RTI/maxresdefault.jpg" alt="Хто такий тестувальник">
+											</picture>
+										</a>
+										<button class="video__button" aria-label="Play">
+											<svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__video-box swiper-slide">
+									<div class="video">
+										<a class="video__link" href="https://youtu.be/bclnGix8RTI">
+											<picture>
+												<source srcset="https://i.ytimg.com/vi_webp/bclnGix8RTI/maxresdefault.webp" type="image/webp">
+												<img class="video__media" src="https://i.ytimg.com/vi/bclnGix8RTI/maxresdefault.jpg" alt="Хто такий тестувальник">
+											</picture>
+										</a>
+										<button class="video__button" aria-label="Play">
+											<svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__video-box swiper-slide">
+									<div class="video">
+										<a class="video__link" href="https://youtu.be/bclnGix8RTI">
+											<picture>
+												<source srcset="https://i.ytimg.com/vi_webp/bclnGix8RTI/maxresdefault.webp" type="image/webp">
+												<img class="video__media" src="https://i.ytimg.com/vi/bclnGix8RTI/maxresdefault.jpg" alt="Хто такий тестувальник">
+											</picture>
+										</a>
+										<button class="video__button" aria-label="Play">
+											<svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+										</button>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="video-arrows">
+							<div class="arrow-left swiper-button-next">
+								<img src="@img/arrow.png" alt="arrow">
+							</div>
+							<div class="arrow-right swiper-button-prev">
+								<img src="@img/arrow.png" alt="arrow">
+							</div>
+						</div>
+						<div class="reviews__title-video">
+							А ДЛЯ ТИХ, ХТО <br> ЩЕ НЕ ВИРІШИВ <span>ВІДЕО УРОКИ</span> З САМОСТІЙНОГО НАВЧАННЯ <br> НА НАШОМУ ЮТУБ КАНАЛІ.
+						</div>
+						<span class="reviews-boxshadow-color_left"></span>
+						<span class="reviews-boxshadow-color_right"></span>
+						<span class="reviews-boxshadow-black"></span>
+						<span class="reviews-boxshadow-light_black"></span>
+						<span class="reviews-boxshadow"></span>
+					</div>
+				</section>
+
+				<section class="study">
+					<div class="container-fluid">
+						<h4 class="study__title">
+							СТИСЛА <span>ПРОГРАМА НАВЧАННЯ</span>
+						</h4>
+						<div class="study__block">
+							<div class="study__box">
+								<div class="study__box-title"><span>1 МОДУЛЬ</span></div>
+								<div class="study__box-subtitle">Теорія тестування</div>
+								<div class="study__box-text">
+									Якщо немає повних знать з теорії, практика буде не повноцінна, а може взагалі не тотрібна (навіщо робити щось незнаючи, для чого?)
+								</div>
+							</div>
+							<div class="study__box">
+								<div class="study__box-title"><span>2 МОДУЛЬ</span></div>
+								<div class="study__box-subtitle">Практика</div>
+								<div class="study__box-text">
+									Це одне з найголовних, що буде давати перевагунад іншими кандидатами без практичного досвіду, а без нього знайти роботу майже неможливо
+								</div>
+							</div>
+							<div class="study__box">
+								<div class="study__box-title"><span>3 МОДУЛЬ</span></div>
+								<div class="study__box-subtitle">Підготовка резюме</div>
+								<div class="study__box-text">
+									Один з початкових етапів з пошуку роботи, без правильного резюме, дуже малі шанси, що вас покличуть наспівбесіду
+								</div>
+							</div>
+							<div class="study__box">
+								<div class="study__box-title"><span>4 МОДУЛЬ</span></div>
+								<div class="study__box-subtitle">Пошук роботи</div>
+								<div class="study__box-text">
+									Коли в тебе вже є міцьні знання, практика, написане правильно резюме, пошук роботи виявиться не дуже складним, а з чого почати пошук та де розміщувати резюме, як проходити співбесіду, щоб був результат ми розповімо
+								</div>
+							</div>
+						</div>
+						<h6 class="study__subtitle">ПАМʼЯТАЙТЕ В IT ВАШі ЗНАННЯ ВИРІШУЮТЬ ВСЕ!</h6>
+						<span class="study-boxshadow"></span>
+					</div>
+				</section>
+
+				<section class="tabs">
+					<div class="container-fluid">
+						<div class="tabs__main">
+							<div class="tabs__first">
+								<h4 class="tabs__title">
+									Чому в тебе <span>все вийде?</span>
+								</h4>
+								<div class="tabs__block">
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>МОЖЕШ ПРОХОДИТИ ПРОГРАММУ З БУДЬ ЯКОЇ ТОЧКИ СВІТУ</h6>
+									</div>
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>МОЖЛИВІСТЬ НАВЧАТИСЯ З НУЛЯ</h6>
+									</div>
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>ПІДТРИМКА МЕНТОРА ТА КУРАТОРА</h6>
+									</div>
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>ПРАКТИЧНІ ДОМАШНІ ЗАВДАННЯ</h6>
+									</div>
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>МОЖЛИВІСТЬ НАВЧАННЯ У СПЕЦІАЛІСТІВ ВИЩОГО КЛАСУ</h6>
+									</div>
+									<div class="tabs__box">
+										<img src="@img/cheked.png" alt="cheked">
+										<h6>БІЛЬШЕ 80% НАШИХ СТУДЕНТІВ ВЛАШТУВАЛИСЯ НА РОБОТУ</h6>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__image">
+								<img src="@img/cosmopara.png" alt="image">
+							</div>
+							<div class="tabs__questions">
+								<div class="tabs__questions-title">ВІДПОВІДІ НА ПИТАННЯ</div>
+								<div class="tabs__questions-block one">
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Я нічого не знаю чи зможу я навчитися?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aliquid. Eius perspiciatis temporibus et expedita, non molestias odio ad ex totam repudiandae, porro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Як проходитимуть заняття?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, non molestias odio ad ex totam repudiandae, porro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Чи всі зареєстровані студенти зможуть навчатися?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aliquid. Eius perspiciatis temporibus et expedita, non molestias odio ad ex totam repudiandae, porro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Скільки часу виділяти потрібно на навчання?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aliquid. Eius perspiciatis temporibus et expedita porro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Як відбувається грантовий відбір?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aliquid. Eius perspiciatis temporibus et expedita, non molestias odio ad ex totam repudiandae, porro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Чи є обмеження по віку?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aliquid. Eius perspiciatis temporibus et expedita, non molestias odio ad ex totam repudiandae. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+									<div class="tabs__questions-box">
+										<div class="tabs__questions-subtitle">Що буде після реєстрації?</div>
+										<div class="tabs__questions-text">
+											Lorem ipsum, dolor sit amet consectetur adipisicing elitorro mollitia laudantium. Molestias laboriosam nisi atque blanditiis.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="last page-last">
+					<div class="container-fluid">
+						<div class="last__title">
+							<p>НА КУРСІ Є <span>ВСЕ,</span></p>
+							<span>ЩО</span> дозволить <span>понуритись в ІТ АТМОСФЕРУ</span>, <br>
+							та вивчитися на Тестувальника <span>ПО</span>. <br>
+							Твій результат по закінченню <br>
+							курсів приємно здивує!
+						</div>
+						<form class="last__form" action="#" method="post" enctype="multipart/form-data">
+							<div class="last__form-block">
+								<div class="last__box">
+									<input class="last__input" type="text" name="name" placeholder="Фамилия и Имя*">
+								</div>
+								<div class="last__box">
+									<input class="last__input" type="email" name="email" placeholder="Email*">
+								</div>
+								<div class="last__box">
+									<input class="last__input" type="tel" name="tel" placeholder="Контактный телефон*">
+								</div>
+								<div class="last__box">
+									<input class="last__input" type="text" name="messanger" placeholder="Телеграм*">
+								</div>
+							</div>
+							<button class="last__button submit-btn" type="submit">РЕЄСТРАЦІЯ НА КУРСИ</button>
+						</form>
+						<div class="last__timer">
+							<div class="last__timer-title">До старту курсу залишилось:</div>
+							<div class="time-count__content">
+								<div class="time-count__item time-count__days">
+									<div class="time-count__val">00</div>
+									<span class="time-count__text">Днів</span>
+								</div>
+								<div class="time-count__separator">:</div>
+								<div class="time-count__item time-count__hours">
+									<div class="time-count__val">00</div>
+									<span class="time-count__text">Годин</span>
+								</div>
+								<div class="time-count__separator">:</div>
+								<div class="time-count__item time-count__minutes">
+									<div class="time-count__val">00</div>
+									<span class="time-count__text">Хвилин</span>
+								</div>
+								<div class="time-count__separator">:</div>
+								<div class="time-count__item time-count__seconds">
+									<div class="time-count__val">00</div>
+									<span class="time-count__text">Секунд</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/main/footer.html',{})
+		</div>
+		@@include('html/_static/script.html',{})
+	</body>
+</html>

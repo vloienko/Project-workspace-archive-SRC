@@ -1,0 +1,188 @@
+body.lock {
+   overflow: hidden;
+}
+.popup.open {
+   opacity: 1;
+   visibility: visible;
+}
+// Validation
+.popup__form-item._error {
+   box-shadow: 0 0 10px $color-orange;
+}
+textarea.popup__form-item {
+   min-height: 80px;
+   resize: vertical;
+}
+// First PopUp ------------------------------------
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(10px);
+   top: 0;
+   left: 0;
+   z-index: 100;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+   
+   &__body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+   }
+
+   &__content {
+      background: $color-bg-popup;
+      border-radius: 20px;
+      padding: 38px 88px;
+      @media (max-width: 768px) {
+         padding: 12px 5px 30px 5px;
+         max-width: 310px;
+         width: 100%;
+      }
+   }
+
+   &__title {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.08em;
+      color: $color-text-popup;
+      margin-bottom: 30px;
+      max-width: 328px;
+      @media (max-width: 768px) {
+         margin-bottom: 20px;
+         padding: 0 25px;
+      }
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-item {
+         background: #D9D9D9;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 10px;
+         padding: 10px 15px;
+         margin-bottom: 20px;
+         border: none;
+         max-width: 300px;
+         width: 100%;
+         &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.08em;
+            color: $color-text-main;
+         }
+         @media (max-width: 768px) {
+            margin-bottom: 10px;
+         }
+      }
+   
+      &-btn {
+         max-width: 150px;
+         width: 100%;
+         background: linear-gradient(180deg, rgba(132, 132, 132, 0.72) 0%, rgba(255, 255, 255, 0.72) 100%);
+         border: 2px solid #848484;
+         border-radius: 5px;
+         padding: 10px;
+         letter-spacing: 0.08em;
+         color: $color-white;
+         text-align: center;
+	      transition: all 0.8s ease 0s;
+         &:hover {
+            background-color: red;
+            background: linear-gradient(180deg, rgba(217, 146, 10, 0.72) 0%, rgba(217, 146, 10, 0) 100%);
+            border-color: $color-orange;
+         }
+         &:active {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(217, 146, 10, 0) 100%);
+            color: $color-text-popup;
+         }
+         @media (max-width: 768px) {
+            margin-top: 14px;
+         }
+      }
+   }  
+}
+// First PopUp ------------------------------------
+
+// Second PopUp -----------------------------------
+.popup {
+   
+   &__content-next {
+      padding: 18px 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+   }
+
+   &__content-closed {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 4px;
+      right: 4px;
+      background-image: url("../img/cancel.png");
+      cursor: pointer;
+   }
+
+   &__img {
+      margin-right: 15px;
+   }
+
+   &__text {
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: #171717;
+   }
+}
+// Second PopUp -----------------------------------
+
+// Third PopUp ------------------------------------
+.popup-reviews {
+   padding: 20px;
+   max-width: 550px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.popup__text-third {
+   max-width: 280px;
+   font-size: 12px;
+   line-height: 15px;
+}
+// Third PopUp ------------------------------------
+
+
+.popup__form {
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(51, 51, 51, 0.9) url("../img/loading.gif") center / 50px no-repeat;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease 0s;
+   }
+   &._sending::after {
+      opacity: 1;
+      visibility: visible;
+   }
+}
+
