@@ -1,0 +1,33 @@
+.case-3 {
+	background-color: $color-blue;
+	color: $color-white;
+	&__text {
+		@include adaptiveValue("font-size", 64, 27);
+		@include adaptiveValue("margin-bottom", 50, 20);
+		max-width: 1310px;
+		strong {
+			@include adaptiveValue("font-size", 100, 25);
+		}
+	}
+
+	&__box {
+		@include adaptiveValue("padding-top", 50, 20);
+		@include adaptiveValue("padding-bottom", 50, 20);
+		@include adaptiveValue("padding-right", 100, 20);
+		@include adaptiveValue("padding-left", 100, 20);
+		@include adaptiveValue("font-size", 160, 32);
+		line-height: 1.3;
+		display: inline-block;
+		border-radius: 20px;
+		color: $color-blue;
+		background: $color-white;
+		font-weight: 500;
+		@include screen-xhl {
+			border-radius: 10px;
+		}
+		@include screen-sm {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
